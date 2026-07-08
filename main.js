@@ -1,5 +1,5 @@
 /* ============================================
-   EL NAVEGANTE — MAIN.JS v2
+   LAS DELICIOSAS — MAIN.JS
    Secuencia cinematográfica + interacciones
    ============================================ */
 
@@ -93,8 +93,8 @@ function spawnParticles() {
   const container = document.getElementById('hero-particles');
   if (!container) return;
 
-  const emojis  = ['🌮','🎸','⭐','🎤','🔥','✨'];
-  const colors  = ['#E8A317','#C41E24','#FFD966','rgba(255,248,240,0.6)'];
+  const emojis  = ['🫓','🧀','⭐','🍔','🔥','✨'];
+  const colors  = ['#C9A227','#7A2331','#E8CD7A','rgba(251,246,236,0.6)'];
   const count   = window.innerWidth < 600 ? 8 : 16;
 
   for (let i = 0; i < count; i++) {
@@ -302,7 +302,7 @@ filters.forEach(btn => {
 });
 
 /* ---- FORMULARIO → REDIRIGE EL MENSAJE A WHATSAPP ---- */
-const NUMERO_WHATSAPP_FORMULARIO = '528995072712';
+const NUMERO_WHATSAPP_FORMULARIO = '523331534945';
 
 document.getElementById('contact-form')?.addEventListener('submit', (e) => {
   e.preventDefault();

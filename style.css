@@ -1,36 +1,36 @@
 /* ============================================
-   EL NAVEGANTE — DESIGN SYSTEM v2
-   "Rock Callejero" — Taquería × Karaoke
+   LAS DELICIOSAS — DESIGN SYSTEM
+   Tostadas Especiales · "Seguimos con la Tradición"
    ============================================ */
 
 /* ---------- VARIABLES ---------- */
 :root {
-  /* Marca */
-  --rojo:          #C41E24;
-  --rojo-oscuro:   #7A1014;
-  --rojo-vivo:     #E8383E;
-  --cafe:          #2A0D0D;
-  --cafe-medio:    #5C4640;
-  --dorado:        #E8A317;
-  --dorado-claro:  #FFD966;
-  --dorado-suave:  #FEF0C7;
-  --crema:         #FFF8ED;
-  --crema-oscura:  #FEF0C7;
-  --negro:         #0D0705;
-  --oscuro:        #170A08;
-  --oscuro-medio:  #2B1512;
+  /* Marca — negro, oro antiguo y vino, como el logotipo y el empaque */
+  --rojo:          #7A2331;
+  --rojo-oscuro:   #4F1620;
+  --rojo-vivo:     #9C3145;
+  --cafe:          #241A12;
+  --cafe-medio:    #6B5641;
+  --dorado:        #C9A227;
+  --dorado-claro:  #E8CD7A;
+  --dorado-suave:  #F5EAC8;
+  --crema:         #FBF6EC;
+  --crema-oscura:  #F0E4CB;
+  --negro:         #0E0B08;
+  --oscuro:        #17120D;
+  --oscuro-medio:  #241C14;
   --blanco:        #FFFFFF;
 
   /* Neutros */
-  --gris-calido:   #F5EDE5;
-  --borde-oscuro:  rgba(255,248,240,0.12);
-  --borde-dorado:  rgba(232,163,23,0.4);
+  --gris-calido:   #F2EAD9;
+  --borde-oscuro:  rgba(251,246,236,0.12);
+  --borde-dorado:  rgba(201,162,39,0.4);
 
   /* Sombras */
   --sombra-sm:     3px 3px 0px var(--negro);
   --sombra-md:     5px 5px 0px var(--negro);
-  --sombra-dorado: 0 0 30px rgba(217,119,6,0.25);
-  --sombra-card:   0 20px 60px rgba(15,6,2,0.4);
+  --sombra-dorado: 0 0 30px rgba(201,162,39,0.25);
+  --sombra-card:   0 20px 60px rgba(14,11,8,0.4);
 
   /* Radios */
   --r-sm:   10px;
@@ -49,7 +49,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: var(--crema);
   color: var(--negro);
   overflow-x: hidden;
@@ -60,7 +60,7 @@ a { text-decoration: none; }
 
 /* ---------- TIPOGRAFÍA ---------- */
 h1, h2, h3, h4 {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   line-height: 1.1;
 }
 
@@ -103,9 +103,9 @@ h1, h2, h3, h4 {
   transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .loader-text {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 1rem;
-  color: rgba(255,248,240,.5);
+  color: rgba(251,246,236,.5);
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -136,7 +136,7 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 1.4rem;
   color: var(--crema);
   text-shadow: 0 2px 8px rgba(0,0,0,.5);
@@ -158,10 +158,10 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 .nav-links a {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.85rem;
-  color: rgba(255,248,240,.75);
+  color: rgba(251,246,236,.75);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   transition: color var(--t-fast);
@@ -187,17 +187,17 @@ h1, h2, h3, h4 {
   color: var(--blanco) !important;
   padding: 10px 22px;
   border-radius: var(--r-full);
-  font-family: 'Bricolage Grotesque', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   font-weight: 800 !important;
   font-size: 0.85rem !important;
   letter-spacing: 0.05em !important;
   border: 2px solid rgba(255,255,255,.2);
   transition: transform var(--t-fast), box-shadow var(--t-fast) !important;
-  box-shadow: 0 4px 20px rgba(185,28,28,.4);
+  box-shadow: 0 4px 20px rgba(122,35,49,.4);
 }
 .nav-cta:hover {
   transform: translateY(-2px) !important;
-  box-shadow: 0 8px 30px rgba(185,28,28,.5) !important;
+  box-shadow: 0 8px 30px rgba(122,35,49,.5) !important;
 }
 .nav-cta::after { display: none !important; }
 
@@ -227,7 +227,7 @@ h1, h2, h3, h4 {
 }
 .mobile-menu.open { transform: translateX(0); }
 .mobile-menu a {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   color: var(--crema);
   transition: color var(--t-fast), transform var(--t-fast);
@@ -236,7 +236,7 @@ h1, h2, h3, h4 {
 .mobile-menu-close {
   position: absolute; top: 24px; right: 28px;
   background: none; border: none;
-  color: rgba(255,248,240,.5); font-size: 2rem;
+  color: rgba(251,246,236,.5); font-size: 2rem;
   cursor: pointer;
   transition: color var(--t-fast);
 }
@@ -284,7 +284,7 @@ h1, h2, h3, h4 {
 .hero-gradient {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 70% at 50% 50%, rgba(185,28,28,.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 70% at 50% 50%, rgba(122,35,49,.08) 0%, transparent 70%);
   z-index: 2;
   pointer-events: none;
 }
@@ -327,10 +327,10 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(217,119,6,.15);
-  border: 1px solid rgba(217,119,6,.4);
+  background: rgba(201,162,39,.15);
+  border: 1px solid rgba(201,162,39,.4);
   color: var(--dorado-claro);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.15em;
@@ -368,7 +368,7 @@ h1, h2, h3, h4 {
 
 .hero-subtitle {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: rgba(255,248,240,.65);
+  color: rgba(251,246,236,.65);
   font-weight: 400;
   line-height: 1.7;
   max-width: 520px;
@@ -401,13 +401,13 @@ h1, h2, h3, h4 {
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(255,248,240,.35);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  color: rgba(251,246,236,.35);
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 .scroll-mouse {
   width: 22px; height: 34px;
-  border: 2px solid rgba(255,248,240,.25);
+  border: 2px solid rgba(251,246,236,.25);
   border-radius: 11px;
   display: flex;
   justify-content: center;
@@ -442,7 +442,7 @@ h1, h2, h3, h4 {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 0.95rem;
   letter-spacing: 0.04em;
@@ -470,28 +470,28 @@ h1, h2, h3, h4 {
 .btn-primary {
   background: var(--rojo);
   color: var(--blanco);
-  box-shadow: 0 4px 24px rgba(185,28,28,.4), inset 0 1px 0 rgba(255,255,255,.15);
+  box-shadow: 0 4px 24px rgba(122,35,49,.4), inset 0 1px 0 rgba(255,255,255,.15);
 }
-.btn-primary:hover { box-shadow: 0 8px 32px rgba(185,28,28,.55); }
+.btn-primary:hover { box-shadow: 0 8px 32px rgba(122,35,49,.55); }
 
 .btn-outline {
   background: transparent;
   color: var(--crema);
-  border: 2px solid rgba(255,248,240,.25);
+  border: 2px solid rgba(251,246,236,.25);
   box-shadow: none;
 }
 .btn-outline:hover {
   border-color: var(--dorado);
   color: var(--dorado-claro);
-  box-shadow: 0 4px 20px rgba(217,119,6,.2);
+  box-shadow: 0 4px 20px rgba(201,162,39,.2);
 }
 
 .btn-dorado {
   background: var(--dorado);
   color: var(--negro);
-  box-shadow: 0 4px 24px rgba(217,119,6,.4);
+  box-shadow: 0 4px 24px rgba(201,162,39,.4);
 }
-.btn-dorado:hover { box-shadow: 0 8px 32px rgba(217,119,6,.55); }
+.btn-dorado:hover { box-shadow: 0 8px 32px rgba(201,162,39,.55); }
 
 /* ============================================
    STATS BAR
@@ -514,7 +514,7 @@ h1, h2, h3, h4 {
   opacity: 0;
 }
 .stat-num {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(2rem, 5vw, 3rem);
   color: var(--dorado-claro);
   display: block;
@@ -526,8 +526,8 @@ h1, h2, h3, h4 {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: rgba(255,248,240,.45);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  color: rgba(251,246,236,.45);
+  font-family: 'Poppins', sans-serif;
 }
 
 /* ============================================
@@ -546,14 +546,14 @@ h1, h2, h3, h4 {
   display: inline-block;
   background: var(--dorado-suave);
   color: var(--cafe-medio);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   padding: 6px 18px;
   border-radius: var(--r-full);
-  border: 1.5px solid rgba(217,119,6,.3);
+  border: 1.5px solid rgba(201,162,39,.3);
   margin-bottom: 16px;
 }
 .section-title {
@@ -579,7 +579,7 @@ h1, h2, h3, h4 {
   color: var(--cafe-medio);
   border-radius: var(--r-full);
   padding: 9px 20px;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.82rem;
   text-transform: uppercase;
@@ -596,7 +596,7 @@ h1, h2, h3, h4 {
   background: var(--rojo);
   border-color: var(--rojo);
   color: var(--blanco);
-  box-shadow: 0 4px 16px rgba(185,28,28,.3);
+  box-shadow: 0 4px 16px rgba(122,35,49,.3);
 }
 
 /* Grid */
@@ -628,7 +628,7 @@ h1, h2, h3, h4 {
 }
 .menu-card:hover {
   transform: translateY(-8px) scale(1.01);
-  box-shadow: var(--sombra-card), 0 0 0 2px rgba(217,119,6,.2);
+  box-shadow: var(--sombra-card), 0 0 0 2px rgba(201,162,39,.2);
 }
 
 .menu-card-img {
@@ -667,7 +667,7 @@ h1, h2, h3, h4 {
   display: inline-block;
   background: var(--rojo);
   color: var(--blanco);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -680,7 +680,7 @@ h1, h2, h3, h4 {
 .menu-card-label--cafe   { background: var(--cafe);   color: var(--crema); }
 
 .menu-card-name {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 1.2rem;
   margin-bottom: 6px;
@@ -694,7 +694,7 @@ h1, h2, h3, h4 {
   margin-bottom: 14px;
 }
 .menu-card-price {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
   color: var(--rojo);
   line-height: 1;
@@ -733,9 +733,9 @@ h1, h2, h3, h4 {
 }
 
 .section-tag-dark {
-  background: rgba(217,119,6,.15);
+  background: rgba(201,162,39,.15);
   color: var(--dorado-claro);
-  border: 1px solid rgba(217,119,6,.3);
+  border: 1px solid rgba(201,162,39,.3);
 }
 .section-title-dark { color: var(--crema); }
 .section-title-dark em { color: var(--dorado-claro); }
@@ -755,8 +755,8 @@ h1, h2, h3, h4 {
 }
 
 .benefit-card {
-  background: rgba(255,248,240,.04);
-  border: 1px solid rgba(255,248,240,.08);
+  background: rgba(251,246,236,.04);
+  border: 1px solid rgba(251,246,236,.08);
   border-radius: var(--r-lg);
   padding: 32px 24px;
   text-align: center;
@@ -765,8 +765,8 @@ h1, h2, h3, h4 {
 }
 .benefit-card:hover {
   transform: translateY(-6px);
-  background: rgba(217,119,6,.08);
-  border-color: rgba(217,119,6,.25);
+  background: rgba(201,162,39,.08);
+  border-color: rgba(201,162,39,.25);
 }
 
 .benefit-icon {
@@ -775,7 +775,7 @@ h1, h2, h3, h4 {
   display: block;
 }
 .benefit-title {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 1.05rem;
   color: var(--crema);
@@ -783,7 +783,7 @@ h1, h2, h3, h4 {
 }
 .benefit-desc {
   font-size: 0.88rem;
-  color: rgba(255,248,240,.5);
+  color: rgba(251,246,236,.5);
   line-height: 1.6;
 }
 
@@ -826,7 +826,7 @@ h1, h2, h3, h4 {
 }
 .service-item-icon { font-size: 2rem; }
 .service-item-title {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 1rem;
   color: var(--negro);
@@ -853,7 +853,7 @@ h1, h2, h3, h4 {
 .horarios-row.header {
   background: var(--rojo);
   color: var(--blanco);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -861,7 +861,7 @@ h1, h2, h3, h4 {
 }
 .horarios-row .dia { font-weight: 600; color: var(--negro); }
 .horarios-row .hora {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: var(--rojo);
 }
@@ -895,7 +895,7 @@ h1, h2, h3, h4 {
   box-shadow: 0 8px 40px rgba(15,6,2,.08);
 }
 .form-title {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   color: var(--negro);
   margin-bottom: 28px;
@@ -903,7 +903,7 @@ h1, h2, h3, h4 {
 .form-group { margin-bottom: 20px; }
 .form-label {
   display: block;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -916,7 +916,7 @@ h1, h2, h3, h4 {
   padding: 13px 18px;
   border: 1.5px solid rgba(61,28,2,.15);
   border-radius: var(--r-md);
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   background: var(--crema);
   color: var(--negro);
@@ -925,7 +925,7 @@ h1, h2, h3, h4 {
 }
 .form-input:focus, .form-textarea:focus {
   border-color: var(--rojo);
-  box-shadow: 0 0 0 3px rgba(185,28,28,.1);
+  box-shadow: 0 0 0 3px rgba(122,35,49,.1);
 }
 .form-textarea { resize: vertical; min-height: 120px; }
 
@@ -978,7 +978,7 @@ h1, h2, h3, h4 {
 }
 .contact-info-icon { font-size: 1.6rem; flex-shrink: 0; }
 .contact-info-label {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -1016,14 +1016,14 @@ footer {
   flex-shrink: 0;
 }
 .footer-brand {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   color: var(--dorado-claro);
   line-height: 1;
 }
 .footer-tagline {
   font-size: 0.82rem;
-  color: rgba(255,248,240,.4);
+  color: rgba(251,246,236,.4);
   margin-top: 4px;
 }
 .footer-links {
@@ -1033,16 +1033,16 @@ footer {
   list-style: none;
 }
 .footer-links a {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 0.88rem;
-  color: rgba(255,248,240,.5);
+  color: rgba(251,246,236,.5);
   transition: color var(--t-fast);
 }
 .footer-links a:hover { color: var(--dorado-claro); }
 .footer-copy {
   font-size: 0.78rem;
-  color: rgba(255,248,240,.25);
+  color: rgba(251,246,236,.25);
   border-top: 1px solid rgba(255,255,255,.06);
   padding-top: 24px;
 }
@@ -1061,7 +1061,7 @@ footer {
   color: var(--blanco);
   padding: 14px 22px 14px 16px;
   border-radius: var(--r-full);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 0.9rem;
   box-shadow: 0 8px 32px rgba(37,211,102,.35), 0 2px 8px rgba(0,0,0,.2);
@@ -1098,8 +1098,8 @@ footer {
 }
 
 .review-card {
-  background: rgba(255,248,240,.04);
-  border: 1px solid rgba(255,248,240,.08);
+  background: rgba(251,246,236,.04);
+  border: 1px solid rgba(251,246,236,.08);
   border-radius: var(--r-lg);
   padding: 28px 24px;
   flex: 1 1 240px;
@@ -1111,15 +1111,15 @@ footer {
 }
 .review-card:hover {
   transform: translateY(-6px);
-  background: rgba(217,119,6,.07);
-  border-color: rgba(217,119,6,.2);
+  background: rgba(201,162,39,.07);
+  border-color: rgba(201,162,39,.2);
 }
 
 .review-stars { font-size: 1rem; letter-spacing: 2px; }
 
 .review-text {
   font-size: 0.9rem;
-  color: rgba(255,248,240,.65);
+  color: rgba(251,246,236,.65);
   line-height: 1.65;
   flex: 1;
   font-style: italic;
@@ -1136,7 +1136,7 @@ footer {
   border-radius: 50%;
   background: var(--rojo);
   color: var(--blanco);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 0.85rem;
   display: flex;
@@ -1145,7 +1145,7 @@ footer {
   flex-shrink: 0;
 }
 .review-name {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--crema);
@@ -1155,7 +1155,7 @@ footer {
   align-items: center;
   gap: 4px;
   font-size: 0.75rem;
-  color: rgba(255,248,240,.4);
+  color: rgba(251,246,236,.4);
   margin-top: 2px;
 }
 
@@ -1174,7 +1174,7 @@ footer {
   gap: 6px;
   padding: 7px 14px;
   border-radius: var(--r-full);
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 0.78rem;
   text-decoration: none;
@@ -1188,7 +1188,7 @@ footer {
 .social-ig:hover { box-shadow: 0 4px 16px rgba(225,48,108,.25); }
 .social-fb { color: #1877F2; border-color: rgba(24,119,242,.3); background: rgba(24,119,242,.06); }
 .social-fb:hover { box-shadow: 0 4px 16px rgba(24,119,242,.25); }
-.social-tt { color: var(--crema); border-color: rgba(255,248,240,.2); background: rgba(255,248,240,.04); }
+.social-tt { color: var(--crema); border-color: rgba(251,246,236,.2); background: rgba(251,246,236,.04); }
 .social-tt:hover { box-shadow: 0 4px 16px rgba(255,255,255,.1); }
 
 /* ============================================
@@ -1208,7 +1208,7 @@ footer {
 .footer-social-icon {
   width: 38px; height: 38px;
   border-radius: 50%;
-  border: 1px solid rgba(255,248,240,.12);
+  border: 1px solid rgba(251,246,236,.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1222,7 +1222,7 @@ footer {
 .footer-social-fb { color: #1877F2; }
 .footer-social-fb:hover { border-color: #1877F2; background: rgba(24,119,242,.12); }
 .footer-social-tt { color: var(--crema); }
-.footer-social-tt:hover { border-color: rgba(255,248,240,.4); background: rgba(255,248,240,.08); }
+.footer-social-tt:hover { border-color: rgba(251,246,236,.4); background: rgba(251,246,236,.08); }
 .footer-social-wa { color: #25D366; }
 .footer-social-wa:hover { border-color: #25D366; background: rgba(37,211,102,.12); }
 
