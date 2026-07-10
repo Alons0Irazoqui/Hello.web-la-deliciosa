@@ -302,7 +302,7 @@ filters.forEach(btn => {
 });
 
 /* ---- FORMULARIO → REDIRIGE EL MENSAJE A WHATSAPP ---- */
-const NUMERO_WHATSAPP_FORMULARIO = '523331534945';
+const NUMERO_WHATSAPP_FORMULARIO = '523328186554';
 
 document.getElementById('contact-form')?.addEventListener('submit', (e) => {
   e.preventDefault();
